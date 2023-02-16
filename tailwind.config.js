@@ -8,6 +8,13 @@ module.exports = {
     extend: {
       fontFamily: {
         "sans": ['var(--font-rubik)']
+      },
+      colors: {
+        crimson: "#ff014f",
+        blue: "#040836"
+      },
+      fontSize: {
+        md: "15px"
       }
     }
   },
