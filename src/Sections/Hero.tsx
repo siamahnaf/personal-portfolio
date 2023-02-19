@@ -3,6 +3,7 @@ import TopHeader from "@/Components/Hero/TopHeader";
 //Components
 import Content from "@/Components/Hero/Content";
 import Transition from "@/Components/Hero/Transition";
+import Features from "@/Components/Hero/Features";
 
 const Hero = () => {
     return (
@@ -16,6 +17,7 @@ const Hero = () => {
                     <Transition />
                 </div>
             </div>
+            <Features />
         </div>
     );
 };
