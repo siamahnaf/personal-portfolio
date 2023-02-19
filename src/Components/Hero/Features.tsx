@@ -12,7 +12,7 @@ const Features = () => {
             </p>
             <div className="grid grid-cols-8 gap-4">
                 {FeaturesData.map((item, i) => (
-                    <div className={`bg-${item.background}`}>
+                    <div className={`bg-${item.background}`} key={i}>
                         <Image src={item.image} alt={item.figure} />
                         <p className="text-blue">{item.figure}</p>
                     </div>
