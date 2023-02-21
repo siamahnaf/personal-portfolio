@@ -1,8 +1,15 @@
-import { Quicksand } from '@next/font/google';
+import { Quicksand, Rubik } from '@next/font/google';
 
-export const rubik = Quicksand({
-    variable: "--font-rubik",
+export const quicksand = Quicksand({
+    variable: "--font-quicksand",
     subsets: ["latin"],
     weight: ["300", "400", "500", "600", "700"],
+    display: 'swap'
+})
+
+export const rubik = Rubik({
+    variable: "--font-rubik",
+    subsets: ["latin"],
+    weight: ["600"],
     display: 'swap'
 })

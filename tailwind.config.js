@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "sans": ['var(--font-rubik)']
+        "sans": ['var(--font-quicksand)'],
+        "mono": ['var(--font-rubik)']
+      },
+      colors: {
+        main: "#fb0846",
+        dark: "#040836"
       },
       fontSize: {
         md: "15px"

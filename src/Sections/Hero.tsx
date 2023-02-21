@@ -10,10 +10,10 @@ const Hero = () => {
         <div>
             <TopHeader />
             <div className="flex flex-wrap">
-                <div className="basis-2/4">
+                <div className="basis-7/12">
                     <Content />
                 </div>
-                <div className="basis-2/4 w-screen overflow-hidden">
+                <div className="basis-5/12 w-screen overflow-hidden">
                     <Transition />
                 </div>
             </div>
