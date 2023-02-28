@@ -30,13 +30,13 @@ const TopHeader = () => {
         <div className="flex items-center py-1">
             <div className="mr-10">
                 <Link href="mailto:mail@siamahnaf.com" className="group">
-                    <PhoneIcon className="inline mr-2 mt-[-1px] fill-main group-hover:fill-dark transition-all duration-200 ease-in-out" size={17} />
+                    <PhoneIcon className="inline mr-2 mt-[-1px] fill-main group-hover:fill-dark dark:group-hover:fill-white transition-all duration-200 ease-in-out" size={17} />
                     <span className="text-base font-medium transition-all duration-200 ease-in-out group-hover:text-main">+8801611994403</span>
                 </Link>
             </div>
             <div>
                 <Link href="tel:+8801611994403" className="group">
-                    <MailIcon className="inline mr-2 mt-[-1px] fill-main group-hover:fill-dark transition-all duration-200 ease-in-out" size={18} />
+                    <MailIcon className="inline mr-2 mt-[-1px] fill-main group-hover:fill-dark dark:group-hover:fill-white transition-all duration-200 ease-in-out" size={18} />
                     <span className="text-base font-medium transition-all duration-200 ease-in-out group-hover:text-main">mail@siamahnaf.com</span>
                 </Link>
             </div>
@@ -44,7 +44,7 @@ const TopHeader = () => {
                 <div className="flex items-center justify-center gap-1">
                     {Navs.map((item, i) => (
                         <Link href="/" className="relative group block w-14 text-center py-0.5" key={i}>
-                            {createElement(item.icon, { size: 18, className: "fill-dark relative top-0 transition-all ease-in-out duration-[400ms]  group-hover:top-5 group-hover:opacity-0 group-hover:invisible mx-auto" })}
+                            {createElement(item.icon, { size: 18, className: "fill-dark relative top-0 transition-all ease-in-out duration-[400ms]  group-hover:top-5 group-hover:opacity-0 group-hover:invisible mx-auto dark:fill-white" })}
                             <p className="text-[14px] font-medium absolute left-0 -top-6 opacity-0 w-full invisible transition-all ease-in-out duration-[400ms] group-hover:opacity-100 group-hover:visible group-hover:top-0">{item.text}</p>
                         </Link>
                     ))}

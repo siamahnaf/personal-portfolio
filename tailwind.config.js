@@ -11,13 +11,16 @@ module.exports = {
         "mono": ['var(--font-rubik)']
       },
       colors: {
-        main: "#fb0846",
-        dark: "#040836"
+        main: "#FF7844",
+        dark: "#1B1F3A"
       },
       fontSize: {
         md: "15px"
       }
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require('tailwind-scrollbar')({ nocompatible: true })
+  ]
 }
