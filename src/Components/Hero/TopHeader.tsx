@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 
 //Icons
-import { PhoneIcon, MailIcon, UserIcon, SkillIcon, ContactIcon } from "@/Icons/IconPack";
+import { PhoneIcon, MailIcon, UserIcon, SkillIcon, ContactIcon, MenuBarIcon } from "@/Icons/IconPack";
 
 
 //Data
@@ -27,20 +27,25 @@ const TopHeader = () => {
         setMounted(true)
     }, [])
     return (
-        <div className="flex items-center py-1">
+        <div className="flex items-center py-1 lg:py-1 smd:py-2">
+            <div className="mr-5 smd:hidden xxs:block">
+                <button>
+                    <MenuBarIcon size={16} className="inline -mt-px" />
+                </button>
+            </div>
             <div className="mr-10">
                 <Link href="mailto:mail@siamahnaf.com" className="group">
                     <PhoneIcon className="inline mr-2 mt-[-1px] fill-main group-hover:fill-dark dark:group-hover:fill-white transition-all duration-200 ease-in-out" size={17} />
                     <span className="text-base font-medium transition-all duration-200 ease-in-out group-hover:text-main">+8801611994403</span>
                 </Link>
             </div>
-            <div>
+            <div className="smd:flex-none xxs:flex-1">
                 <Link href="tel:+8801611994403" className="group">
                     <MailIcon className="inline mr-2 mt-[-1px] fill-main group-hover:fill-dark dark:group-hover:fill-white transition-all duration-200 ease-in-out" size={18} />
                     <span className="text-base font-medium transition-all duration-200 ease-in-out group-hover:text-main">mail@siamahnaf.com</span>
                 </Link>
             </div>
-            <div className="flex-1 text-center">
+            <div className="flex-1 text-center smd:block xxs:hidden">
                 <div className="flex items-center justify-center gap-1">
                     {Navs.map((item, i) => (
                         <Link href="/" className="relative group block w-14 text-center py-0.5" key={i}>
@@ -56,7 +61,7 @@ const TopHeader = () => {
                         style={{ marginLeft: "auto" }}
                         checked={currentColor === "dark"}
                         onChange={onThemeChange}
-                        size={25}
+                        size={20}
                         moonColor={currentColor == "light" ? "black" : "white"}
                         sunColor={currentColor == "light" ? "#ffaa00" : "white"}
                     />
