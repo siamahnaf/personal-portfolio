@@ -25,7 +25,7 @@ const Content = () => {
                 />
             </h4>
             <p className="text-[17px] font-medium mb-10 w-11/12 xxl:w-9/12">
-                I'm Siam Ahnaf, a passionate developer who loves to learn new things and create awesome projects. I enjoy working on both front-end and back-end development and have experience with various programming languages and frameworks.
+                I&apos;m Siam Ahnaf, a passionate developer who loves to learn new things and create awesome projects. I enjoy working on both front-end and back-end development and have experience with various programming languages and frameworks.
             </p>
             <Link href="/" className="bg-black text-white py-2.5 px-5 rounded-md text-base font-medium dark:bg-main transition-all duration-200 ease-in-out">
                 Download CV
