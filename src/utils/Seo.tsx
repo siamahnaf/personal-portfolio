@@ -3,7 +3,7 @@ import Head from 'next/head';
 const Seo = () => {
     return (
         <Head>
-            <meta property="og:url" content="https://siamahnaf.com" />
+            <meta property="og:url" content="https://www.siamahnaf.com/" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Siam Ahnaf | Professional Fullstack Developer" />
             <meta property="og:description" content="I'm Siam Ahnaf, a passionate developer who loves to learn new things and create awesome projects. I enjoy working on both front-end and back-end development and have experience with various programming languages and frameworks" />
