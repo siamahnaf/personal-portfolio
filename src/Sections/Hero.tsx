@@ -4,13 +4,12 @@ import TopHeader from "@/Components/Hero/TopHeader";
 import Content from "@/Components/Hero/Content";
 import Transition from "@/Components/Hero/Transition";
 import Features from "@/Components/Hero/Features";
-import Sidebar from "@/Components/Hero/Sidebar";
 
 const Hero = () => {
     return (
         <div className="xxl:container xxl:mx-auto">
             <TopHeader />
-            <div className="flex flex-wrap xxl:pt-28 lg:py-0 lg:pt-0 lsm:py-14 ">
+            <div className="flex flex-wrap xxl:pt-28 lg:py-0 lg:pt-0 msm:py-14 sm:py-10 xxs:py-7">
                 <div className="smd:basis-7/12 xxs:basis-full">
                     <Content />
                 </div>
@@ -19,7 +18,6 @@ const Hero = () => {
                 </div>
             </div>
             <Features />
-            <Sidebar />
         </div>
     );
 };

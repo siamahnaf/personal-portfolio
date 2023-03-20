@@ -21,7 +21,7 @@ const Features = () => {
             <p className="text-[17px] mb-8">
                 These are a few of the languages/frameworks I&apos;ve used in projects and am most familiar with.
             </p>
-            <div className="grid grid-cols-8 xxl:grid-cols-11 xl:grid-cols-9 lg:grid-cols-8 md:grid-cols-6 smd:grid-cols-5 gap-4">
+            <div className="grid grid-cols-8 xxl:grid-cols-11 xl:grid-cols-9 lg:grid-cols-8 md:grid-cols-6 smd:grid-cols-5 msm:grid-cols-4 sm:grid-cols-3 xs:grid-cols-3 xxs:grid-cols-2 gap-4">
                 {FeaturesData.map((item, i) => (
                     <div key={i}>
                         <div className={item.background + " bg-opacity-20 relative after:bg-main after:backdrop-blur-[10px] after:backdrop-saturate-[180%] after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-10 rounded-md after:rounded-md px-[25px] py-[35px]"}>
