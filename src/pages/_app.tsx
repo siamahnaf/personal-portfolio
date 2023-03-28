@@ -1,6 +1,7 @@
 import "@/styles/globals.css"
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
 
 //Fonts
 import { quicksand, rubik } from "@/Fonts";
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute="class">
       <main className={`${quicksand.variable} ${rubik.variable} font-sans`}>
         <Component {...pageProps} />
+        <Analytics />
       </main>
     </ThemeProvider>
   )
