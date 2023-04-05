@@ -1,6 +1,6 @@
 {
   "name": "siam-ahnaf",
-  "version": "beta-1.0.6",
+  "version": "beta-1.0.7",
   "private": true,
   "scripts": {
     "dev": "next dev",
