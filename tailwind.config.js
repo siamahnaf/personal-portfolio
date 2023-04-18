@@ -23,7 +23,7 @@ module.exports = {
         "mono": ['var(--font-rubik)']
       },
       colors: {
-        main: "#FF7844",
+        main: "#ff9800",
         dark: "#1B1F3A"
       },
       fontSize: {

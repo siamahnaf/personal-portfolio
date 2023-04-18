@@ -1,4 +1,5 @@
 import Hero from "@/Sections/Hero";
+import About from "@/Sections/About";
 import Footer from "@/Sections/Footer";
 
 //Seo
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
       <Seo />
       <Hero />
+      <About />
       <Footer />
     </div>
   );
