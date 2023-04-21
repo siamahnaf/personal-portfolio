@@ -1,4 +1,4 @@
-import { Quicksand, Rubik } from '@next/font/google';
+import { Quicksand, Rubik } from 'next/font/google';
 
 export const quicksand = Quicksand({
     variable: "--font-quicksand",

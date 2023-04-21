@@ -4,6 +4,7 @@ import Link from "next/link";
 //Components
 import Socials from "@/Components/About/Socials";
 import AboutList from "@/Components/About/AboutList";
+import Status from "@/Components/About/Status";
 
 //Images
 import AboutImage from "@/Assets/about.png";
@@ -11,14 +12,20 @@ import AboutImage from "@/Assets/about.png";
 const About = () => {
     return (
         <div className="xl:container xl:mx-auto">
+            <div className="bg-main p-4 rounded-2xl msm:hidden xxs:block">
+                <Status />
+            </div>
             <div className="bg-white dark:bg-dark shadow-md rounded-2xl my-8">
-                <div className="bg-main bg-[url('/shape.png')] bg-no-repeat bg-center bg-cover px-24 md:px-24 smd:px-16 xxs:px-5 rounded-t-2xl">
-                    <div className="grid grid-cols-3 smd:grid-cols-3 xxs:grid-cols-1 items-center">
+                <div className="bg-main bg-[url('/shape.png')] bg-no-repeat bg-center bg-cover px-5 rounded-t-2xl">
+                    <div className="grid grid-cols-4 lg:grid-cols-4 smd:grid-cols-3 xxs:grid-cols-1 items-center">
                         <div className="smd:block xxs:hidden">
                             <Image src={AboutImage} alt="About Me" width={400} height={400} className="w-64" />
                         </div>
-                        <div className="text-center text-white col-span-2 xxs:max-smd:mt-8">
-                            <h2 className="text-6xl msm:text-6xl sm:text-5xl xs:text-4xl font-mono font-bold mb-1">Siam Ahnaf</h2>
+                        <div className="lg:block xxs:hidden">
+                            <Status />
+                        </div>
+                        <div className="text-center text-white xxs:max-smd:mt-8 col-span-2">
+                            <h2 className="text-6xl msm:text-6xl sm:text-5xl xs:text-4xl xxs:text-3xl font-mono font-bold mb-1">Siam Ahnaf</h2>
                             <p className="font-medium text-xl msm:text-xl sm:text-lg">MERN Stack Developer</p>
                             <Socials />
                         </div>
