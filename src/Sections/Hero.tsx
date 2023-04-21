@@ -7,9 +7,9 @@ import Features from "@/Components/Hero/Features";
 
 const Hero = () => {
     return (
-        <div className="xxl:container xxl:mx-auto">
+        <div className="xl:container xl:mx-auto">
             <TopHeader />
-            <div className="flex flex-wrap xxl:pt-28 lg:py-0 lg:pt-0 msm:py-14 sm:py-10 xxs:py-7">
+            <div className="flex flex-wrap lg:py-0 lg:pt-0 msm:py-14 sm:py-10 xxs:py-7">
                 <div className="smd:basis-7/12 xxs:basis-full">
                     <Content />
                 </div>

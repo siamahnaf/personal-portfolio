@@ -10,11 +10,11 @@ const AboutData = [
 
 const AboutList = () => {
     return (
-        <ul className="mt-10 ml-10">
+        <ul className="mt-10 md:mt-10 xxs:mt-0 ml-10 md:ml-10 xxs:ml-0">
             {AboutData.map((item, i) => (
                 <li key={i} className="flex my-2">
-                    <span className="min-w-[140px] font-medium">{item.title}</span>
-                    <span className="font-medium opacity-50">{item.value}</span>
+                    <span className="min-w-[140px] xs:min-w-[140px] xxs:min-w-[115px] font-medium">{item.title}</span>
+                    <span className="font-medium opacity-50 whitespace">{item.value}</span>
                 </li>
             ))}
         </ul>
