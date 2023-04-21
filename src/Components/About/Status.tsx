@@ -23,7 +23,7 @@ const Status = () => {
     return (
         <div className="bg-white w-full rounded-md p-4">
             {data?.personalStatuses.map((item, i) => (
-                <div>
+                <div key={i}>
                     <h4 className="text-xl font-semibold mb-1 animate-pulse">{item.title}</h4>
                     <div className="mb-3 animate-pulse" dangerouslySetInnerHTML={{ __html: item.description.html }} />
                     <Image width={800} height={200} src={item.image.url} alt={item.title} className="rounded-md" />
